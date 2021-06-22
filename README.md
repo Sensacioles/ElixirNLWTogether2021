@@ -1,5 +1,5 @@
 # Wabanex
-Elixir API for physical training management.
+Elixir API for physical training management. Hosted on Phoenix framework server and using PostgresQL database. 
 ## To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
@@ -8,9 +8,11 @@ Elixir API for physical training management.
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+Check advanced information about the server at [`Phoenix LiveDashboard`](http://localhost:4000/dashboard)
+
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+## Learn more about Phoenix framework
 
   * Official website: https://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
