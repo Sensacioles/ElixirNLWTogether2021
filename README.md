@@ -1,6 +1,6 @@
 # Wabanex
-
-To start your Phoenix server:
+Elixir API for physical training management.
+## To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
@@ -17,3 +17,5 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+##   
+Developed by Giovanni Sencioles @ 2021
