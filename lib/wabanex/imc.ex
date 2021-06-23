@@ -5,17 +5,18 @@ defmodule Wabanex.IMC do
     |> handle_file()
   end
 
-  defp handle_file({:ok,content}) do
+  defp handle_file({:ok, content}) do
     data =
       content
       |> String.split("\r\n")
       |> Enum.map(fn line -> parse_line(line) end)
       |> Enum.into(%{})
-    {:ok,data}
+
+    {:ok, data}
   end
 
-  defp handle_file({:error,_reason}) do
-    {:error,"Erro!"}
+  defp handle_file({:error, _reason}) do
+    {:error, "Erro!"}
   end
 
   defp parse_line(line) do
@@ -25,5 +26,6 @@ defmodule Wabanex.IMC do
     |> List.update_at(2, &String.to_float/1)
     |> calculate_imc()
   end
-  defp calculate_imc([name,height,weight]), do: {name,weight/(height*height)}
+
+  defp calculate_imc([name, height, weight]), do: {name, weight / (height * height)}
 end
