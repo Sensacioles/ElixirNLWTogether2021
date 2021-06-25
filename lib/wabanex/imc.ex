@@ -16,7 +16,7 @@ defmodule Wabanex.IMC do
   end
 
   defp handle_file({:error, _reason}) do
-    {:error, "Erro!"}
+    {:error, "Error while opening the file"}
   end
 
   defp parse_line(line) do
